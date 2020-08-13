@@ -2,6 +2,8 @@
   "name": "simple-scrapbook",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/Alexandrepping/simple-scrapbook.git",
+  "author": "alexandrepping <alexandrefeevale@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
