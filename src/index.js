@@ -135,7 +135,7 @@ class TaskList {
     let message = this.editMessageInput.value;
 
     await api.put(`/scraps/${scrapId}`, { title, message });
-    this.scraps[scrapIndex] = { title, message };
+    this.scraps[scrapIndex] = { id: scrapId, title, message };
 
     this.renderScraps();
     $("#editModal").modal("hide");
