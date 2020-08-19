@@ -112,7 +112,7 @@ class TaskList {
 
     this.scraps.splice(scrapIndex, 1);
 
-    await api.delete(`/scraps/${scrapId}`);
+    await api.delete(`scraps/${scrapId}`);
   }
 
   openEditModal(event) {
@@ -134,7 +134,7 @@ class TaskList {
     let title = this.editTitleInput.value;
     let message = this.editMessageInput.value;
 
-    await api.put(`/scraps/${scrapId}`, { title, message });
+    await api.put(`scraps/${scrapId}`, { title, message });
     this.scraps[scrapIndex] = { id: scrapId, title, message };
 
     this.renderScraps();
