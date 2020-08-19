@@ -26,9 +26,8 @@ class TaskList {
 
     this.scraps = [];
 
-    this.setAddButtonEvents();
-
     this.getScraps();
+    this.setAddButtonEvents();
   }
 
   async getScraps() {
@@ -39,9 +38,9 @@ class TaskList {
     this.renderScraps();
   }
 
-  generateScrapId() {
+  /*generateScrapId() {
     return this.scraps.length + 1;
-  }
+  }*/
 
   setAddButtonEvents() {
     this.addButton.onclick = () => this.addNewScrap();
@@ -63,7 +62,7 @@ class TaskList {
     for (const scrap of this.scraps) {
       this.generateScrap(scrap.id, scrap.title, scrap.message);
     }
-    this.getScraps();
+    //this.getScraps();
     this.setButtonEvents();
   }
 
